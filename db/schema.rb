@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_12_111257) do
+ActiveRecord::Schema.define(version: 2018_10_23_115538) do
 
-  create_table "npcs", force: :cascade do |t|
+  create_table "characters", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.integer "level"
