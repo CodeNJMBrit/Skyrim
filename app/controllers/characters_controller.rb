@@ -5,6 +5,8 @@ class CharactersController < ApplicationController
   # GET /characters.json
   def index
     @characters = Character.all
+
+    @characters = Character.order("name").page(params[:page]).per(5)
   end
 
   # GET /characters/1
