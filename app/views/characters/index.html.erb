@@ -18,7 +18,7 @@
     <% @characters.each do |character| %>
       <tr>
         <td><%= character.name %></td>
-        <td>Click show to see</td>
+        <td><%= character.description %></td>
         <td><%= character.level %></td>
         <td><%= character.defeated_by_char %></td>
         <td><%= link_to 'Show', character %></td>
